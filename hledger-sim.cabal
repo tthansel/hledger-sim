@@ -1,0 +1,32 @@
+name:                hledger-sim
+version:             0.1.0.0
+synopsis:            Retirement investing forecasting
+description:         Forecast outcomes from a retirement plan based on an hledger compatible transaction journal.
+homepage:            https://github.com/tthansel/hledger-sim#readme
+license:             GPL-3
+license-file:        LICENSE
+author:              Tyler Hansel
+maintainer:          tthansel@gmail.com
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable hledger-sim
+  ghc-options:         -Wall
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5,
+                       hledger-lib >= 1.22,
+                       hledger >= 1.22,
+                       containers,
+                       cmdargs,
+                       directory,
+                       time,
+                       random,
+                       random-fu,
+                       text,
+                       Decimal
+  other-modules:       Config,
+                       Rules

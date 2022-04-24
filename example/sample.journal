@@ -1,0 +1,14 @@
+2022-04-01 Starting Balances
+    assets:Checking  $5000
+    assets:Savings   $10000
+    liabilities:Student Loans  -$20000
+    assets:IRA  $0
+    equity:Starting Balance
+
+~ every 1st day from 2022-02-01  Income
+    assets:Checking  $1000
+    assets:401k      $200
+    income:Paycheck
+
+P 2022-02-01 VTI $10.00
+
